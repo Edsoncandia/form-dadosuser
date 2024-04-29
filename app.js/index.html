@@ -1,0 +1,21 @@
+<form action="mailto:empresa@candya.com.br" method="post" enctype="text/plain" onsubmit="gerarTicket()">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br><br>
+
+    <label for="telefone">Telefone:</label><br>
+    <input type="text" id="telefone" name="telefone"><br><br>
+
+    <label for="endereco">Endereço:</label><br>
+    <input type="text" id="endereco" name="endereco"><br><br>
+
+    <input type="hidden" id="numeroTicket" name="numeroTicket">
+
+    <input type="submit" value="Enviar">
+</form>
+
+<script>
+function gerarTicket() {
+    var numeroTicket = Math.floor(Math.random() * 10000); // Gera um número aleatório para o ticket
+    document.getElementById("numeroTicket").value = numeroTicket; // Define o número do ticket no campo oculto
+}
+</script>
