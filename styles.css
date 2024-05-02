@@ -7,8 +7,11 @@ body{
 }
 h1{
     font-size: 30px;
+    font-fafmily:ui-sans-serif;
 }
 form{
+    display:flex;
+    flex-direction:column;
     background-color:aliceblue;
     padding: 20px;
     border-radius: 10px;
@@ -16,4 +19,8 @@ form{
 }
 input[type="submit"]{
     color:green;
+    border-radius: 10px;
+    width:66px;
+    justify-content:center;
+    align-content:center;
 }
